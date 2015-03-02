@@ -2,6 +2,7 @@
 <html prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
+1111
     <title>
       {% if is_login %}Login
       {% elif is_home %}{{ site.author }}
@@ -10,7 +11,7 @@
       {% endif %}
       | {{ site.name }}
     </title>
-111111111
+2222
     {{ header_meta }}
 
     <link href="{{ assets('css/style.css') }}" rel="stylesheet">
@@ -99,6 +100,7 @@
           <div class="row">
             <h4>Showing all posts tagged #{{ tag }}:</h4>
             <hr />
+            3333
           </div>
           {% endif %}
 
@@ -108,7 +110,7 @@
             <div class="span6">
               <h2><a href="{{ post.permalink }}">{{ post.title }}</a></h2>
               <p class="muted">Posted on {{ post.created_at|format_date }}</p>
-
+4444
               <div class="post-content" data-type-cleanup="true">
                 {{ post.content }}
               </div>
@@ -132,7 +134,7 @@
           {% endif %}
 
         {% elif is_post %}
-
+555
           <div class="post">
             <h1>{{ post.title }}</h1>
             <p class="muted">Posted on {{ post.created_at|format_date }}</p>
@@ -152,7 +154,7 @@
             {% endif %}
 
           </div>
-
+6666
           {% if site.disqus %}
           <hr />
 
@@ -195,7 +197,7 @@
             </ul>
             {% endif %}
           </div>
-
+777
           {% if site.disqus %}
           <hr />
 
@@ -308,6 +310,6 @@
     {{ footer_meta }}
 
     <script src="http://postach.io/static/themes/_assets/bootstrap/js/bootstrap.min.js" /></script>
-
+8888
 </body>
 </html>
